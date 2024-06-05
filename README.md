@@ -6,3 +6,14 @@ The purpose of this repo is to host an api for methods related to the Med OP hac
 ## Features
 
 - Conversion from Audio to Nine Line Object
+
+## Setup
+
+```
+pip install -r requirements.txt
+wget https://alphacephei.com/vosk/models/vosk-model-en-us-0.22.zip
+unzip vosk-model-en-us-0.22.zip
+uvicorn app.main:app --reload
+```
+
+From here you should be able to navigate to localhost:8000/docs which will display the U.I.
